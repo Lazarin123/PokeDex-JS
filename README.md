@@ -3,7 +3,7 @@
 Uma Pokédex completa e interativa que consome a **PokeAPI** para listar os 151 Pokémon clássicos. Este projeto demonstra habilidades em manipulação de DOM, consumo de APIs REST e persistência de dados no navegador.
 
 ## 🔗 Demonstração
-> **Acesse o projeto online aqui:** [SEU_LINK_AQUI]
+> **Acesse o projeto online aqui:** [https://lazarin123.github.io/PokeDex-JS/]
 
 ---
 
