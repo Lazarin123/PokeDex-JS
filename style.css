@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #ef5350;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    margin: 5px;
+    background-color: white;
+    color: #ef5350;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: #333;
+    color: white;
+}
+
+#stats {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.pokedex-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.card h3 {
+    text-transform: capitalize;
+    margin: 10px 0;
+    color: #333;
+}
+
+.btn-capturar {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+
+.card.capturado {
+    border: 4px solid #4CAF50;
+    background-color: #e8f5e9;
+}
+
+.card.capturado::after {
+    content: '✔️';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+}
+
+.card.capturado .btn-capturar {
+    background-color: #4CAF50;
+}

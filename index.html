@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Pokedex</title>
+    <link rel="shortcut icon" href="pokelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Master Pokédex</h1>
+        <nav class="menu">
+            <button onclick="filtrar('todos')">Todos</button>
+            <button onclick="filtrar('capturados')">Capturados</button>
+            <button onclick="filtrar('faltam')">Faltam</button>
+        </nav>
+        <div id="stats">Capturados: 0 / 151</div>
+    </header>
+
+    <main id="pokedexContainer" class="pokedex-grid">
+        </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
